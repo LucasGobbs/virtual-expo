@@ -17,7 +17,7 @@
   });
 </script>
 
-<div in:fade={{ duration: 1000 }} class="bg-indigo-800">
+<div in:fade={{ duration: 1000 }} class="bg-[#29253d]">
   <Section {section} />
   <div id="scrollable" class="bg-[#29253d] h-full">
     <div class="text-white">

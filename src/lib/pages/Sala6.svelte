@@ -17,7 +17,7 @@
   });
 </script>
 
-<div in:fade={{ duration: 1000 }} class="bg-indigo-800">
+<div in:fade={{ duration: 1000 }} class="bg-[#0e0308]">
   <Section {section} />
   <div id="scrollable" class="bg-[#0e0308] h-full">
     <div class="text-white">
@@ -26,8 +26,21 @@
           class="transition delay-50
             text-3xl tracking-wide font-quickbold py-10"
         >
-          Acervo
+          Formulário
         </h2>
+
+        <div class="w-full flex justify-center">
+          <a
+            class="ml-5 hover:scale-125 transition ease-in-out delay-75mr-2 w-20"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSehWHZPoeo_vLqbF7382guwW6KS_BV4N1fhVM2-LGUAyNESlQ/viewform?usp=sf_link"
+          >
+            <img
+              class="invert"
+              src="./images/icons/007-contact-form.png"
+              alt="video"
+            />
+          </a>
+        </div>
 
         <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat">Ilham Fitrotul Hayat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/bomsymbols" title="BomSymbols">BomSymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
         <div class="w-2/3 justify-center">

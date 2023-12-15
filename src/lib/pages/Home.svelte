@@ -58,7 +58,7 @@
 
 <div class="h-screen w-full bg-black">
   <div class="text-white bg-black">
-    <div class="bg-[#310b2a] pt-28 pb-8 px-5 h-screen-95 justify-center flex">
+    <div class="bg-[#310b2a] pt-20 pb-8 px-5 h-screen-95 justify-center flex">
       <div class="w-2/3 flex flex-col justify-between items-center">
         <div class="flex flex-col justify-center items-center">
           <h2
@@ -81,7 +81,7 @@
             Curadouras: Ariel de Oliveira, Karen da Silva, Mairá Gomes, Mariana
             Chaves, Millena Delfino e Nathália Rouxinol
           </h3>
-          <p class="md:text-lg lg:text-xl pt-8 text-justify">
+          <p class="md:text-lg lg:text-xl pt-4 text-justify">
             Historicamente, mulheres e suas práticas religiosas estiveram na
             mira dos olhos julgadores, seja para criminalizá-las ou
             desprezá-las. <br /> <br />Nesta exposição, viajamos em alguns
@@ -91,7 +91,7 @@
           </p>
 
           <audio
-            class="mt-8 justify-end opacity-50 hover:scale-110 transition"
+            class="mt-4 justify-end opacity-50 hover:scale-110 transition"
             src="./images/introducaco.mp3"
             controls
             preload="auto"
@@ -100,8 +100,8 @@
             <track kind="captions" />
           </audio>
         </div>
-        <div class="h-20"></div>
-        <i class="w-12">
+        <div class=""></div>
+        <i class="w-12 mt-2">
           <img
             on:click={() =>
               animateScroll.scrollTo({

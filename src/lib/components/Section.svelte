@@ -53,7 +53,7 @@
       <h2
         data-aos="zoom-out"
         class="text-shadow-sm {section.title_shadow} transition delay-300 text-center bg-purple
-        md:text-5xl xl:text-8xl : tracking-wider font-mont font-medium py-5 whitespace-pre-line"
+        md:text-4xl xl:text-6xl : tracking-wider font-mont font-medium py-5 whitespace-pre-line"
       >
         {section.title.toUpperCase()}
       </h2>
