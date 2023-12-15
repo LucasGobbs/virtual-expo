@@ -36,7 +36,7 @@
                 {#if isImg(image)}
                   <img
                     alt="teste"
-                    class="transition ease-in delay-150 h-[40rem] h-80 object-contain"
+                    class="transition ease-in delay-150 h-[25rem] object-contain"
                     src="./images/{image}"
                   />
                 {:else}

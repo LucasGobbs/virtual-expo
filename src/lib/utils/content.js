@@ -1,62 +1,94 @@
 export const content = {
   'sala2': {
-    title: "Bruxaria",
+    title: "É bruxaria ou não é?",
     title_shadow: 'shadow-purple-800',
     url: 'sala2',
-    image: 'a_bruxa_albrecht_durer.png',
-    tint: 'bg-black',
-    filter: '',
-    icons: ['image' , 'video',],
+    image: 'sala2/a_bruxa_albrecht_durer.png',
+    tint: 'bg-[#530d38]',
+    acervoTint: 'bg-[#321223]',
+    icons: ['image', 'video',],
+    resume: `Na Idade Média, a feiticeira era vista como uma mulher criminosa, perversa, ignorante e supersticiosa. Ligadas a crenças pagãs arraigadas, especialmente nas áreas rurais, essas mulheres, devido à sua condição social frágil e falta de conhecimento, eram mais propensas a se envolver em práticas supersticiosas e ilusões atribuídas ao Diabo. A crença em encontros noturnos liderados por uma divindade pagã persistiu por muito tempo, levando as mulheres que compartilhavam dessas crenças a serem rotuladas como loucas pelas autoridades religiosas da época.
+
+    Assim, a feiticeira medieval era associada a curandeiras rurais, mulheres idosas e solitárias imersas em superstições, provocando desconfiança e medo na sociedade em que viviam. Apesar de alguns casos de repressão violenta, elas não atraíam muita atenção das autoridades eclesiásticas.
+`,   
     text: [`Na Idade Média, a feiticeira era vista como uma mulher criminosa, perversa, ignorante e supersticiosa. Ligadas a crenças pagãs arraigadas, especialmente nas áreas rurais, essas mulheres, devido à sua condição social frágil e falta de conhecimento, eram mais propensas a se envolver em práticas supersticiosas e ilusões atribuídas ao Diabo. A crença em encontros noturnos liderados por uma divindade pagã persistiu por muito tempo, levando as mulheres que compartilhavam dessas crenças a serem rotuladas como loucas pelas autoridades religiosas da época.
 
     Assim, a feiticeira medieval era associada a curandeiras rurais, mulheres idosas e solitárias imersas em superstições, provocando desconfiança e medo na sociedade em que viviam. Apesar de alguns casos de repressão violenta, elas não atraíam muita atenção das autoridades eclesiásticas.
     
-  `],
+    Na cultura eclesiástica, qualquer forma de magia era considerada inaceitável. Em Roma, a prática da magia era estritamente proibida pelas leis romanas. O crime de magia era punido severamente na tradição jurídica latina. A Lei das XII Tábuas, escrita numa sociedade agrária, condenava aqueles que usavam feitiçaria para roubar colheitas ou causar danos a outros, resultando na pena de morte por açoitamento. Em 81 a.C., Sila instituiu a Lex Cornelia de sicariis et veneficiis, marcando ações legais contra a magia, punindo aqueles que atentavam contra a vida de alguém ou utilizavam veneno para o assassinato, chamado de "veneficium".
+    
+    Entretanto, a Europa não apenas foi um berço da civilização, mas também um berço de superstições, magia, crenças e mitos. Até os séculos XIII-XIV, a feitiçaria era condenável, mas não era considerada diabólica. A construção da imagem da feiticeira na Europa estava profundamente ligada à visão e atitudes masculinas em relação às mulheres, marcadas por contradições entre veneração e hostilidade, às vezes violentas e repressoras, fruto de uma natureza ambígua.
+    
+    A bruxaria na Europa representou uma transição entre o final da Idade Média e o início da era moderna, perdurando até o século XVII, quando o Iluminismo começou a transformar fundamentalmente a visão de mundo. Estreitamente ligada a questões sociais e culturais, somente a partir do século XV é que práticas de feitiçaria e heresia se mesclaram no novo delito de bruxaria.`],
     
   },
+
+
   'sala3': {
-    title: 'Criptojudaísmo e casos do Brasil',
+    title: `Criptojudaísmo: 
+    O martírio de Branca Dias`,
     title_shadow: 'shadow-yellow-900',
     url: 'sala3',
 
     icons: ['image', 'video', 'map', 'pdf'],
-
-    text: ["Textinhos"],
+    acervoTint: 'bg-[#100c3d]',
+    text: [`“Nós, pois, desejando providenciar, com oportunos remédios, como ao nosso ofício incumbe, […] delegamos-te e constituímos-te, a ti […] Rei João [III], por seu Embaixador e de quem, por isso, muito fiamos como Comissário nosso e da Santa Sé, bem como Inquisidor […] para que, contra todos aqueles que, convertidos à fé cristã, voltaram ao rito judaico, bem como contra aqueles que nascidos de pais cristãos abraçaram o rito judaico, ou observam a heresia Luterana, ou outras […]"
+    
+    Trecho da bula de criação da inquisição portuguesa "Cum ad nichil magis" de papa Clemente VII.`],
     image: 'sala3/capa.jpg',
     tint: 'bg-indigo-800'
   },
 
   'sala4': {
-    title: 'Intolerância aaaaaaaaaaaaaaaaaaa',
-    title_shadow: 'shadow-blue-900',
+    title: `Na diáspora,
+     fui criminalizada`,
+    title_shadow: 'shadow-purple-800',
     url: 'sala4',
-
-    icons: ['image', 'text'],
-
-    text: ["TextinhoAAAAAAAAAAAAAAAAAAAAAA"],
-    image: 'sala3/capa.jpg',
-    tint: 'bg-red-950'
+    image: 'sala4/capa.jpg',
+    // tint: 'bg-[#424482]', bg-[#8c2626]
+    tint: 'bg-[#8c2626]', 
+    acervoTint: 'bg-[#321223]',
+    icons: ['image', 'video',],
+       
+    text: [`Na Idade Média, a feiticeira era vista como uma mulher criminosa, perversa, ignorante e supersticiosa. Ligadas a crenças pagãs arraigadas, especialmente nas áreas rurais, essas mulheres, devido à sua condição social frágil e falta de conhecimento, eram mais propensas a se envolver em práticas supersticiosas e ilusões atribuídas ao Diabo. A crença em encontros noturnos liderados por uma divindade pagã persistiu por muito tempo, levando as mulheres que compartilhavam dessas crenças a serem rotuladas como loucas pelas autoridades religiosas da época.
+    `
+     ]
   },
   'sala5': {
-    title: 'Sala5 aaaaaaaaaaaaaaaaaaAA',
+    title: 'Do Passado ao Presente',
     title_shadow: 'shadow-blue-900',
     url: 'sala5',
 
-    icons: ['image'],
+    icons: ['image', 'text'],
 
-    text: ["TextinhoAAAAAAAAAAAAAAAAAAAA"],
-    image: 'sala3/capa.jpg',
-    tint: 'bg-red-950'
+    text: [`“Nós, pois, desejando providenciar, com oportunos remédios, como ao nosso ofício incumbe, […] delegamos-te e constituímos-te, a ti […] Rei João [III], por seu Embaixador e de quem, por isso, muito fiamos como Comissário nosso e da Santa Sé, bem como Inquisidor […] para que, contra todos aqueles que, convertidos à fé cristã, voltaram ao rito judaico, bem como contra aqueles que nascidos de pais cristãos abraçaram o rito judaico, ou observam a heresia Luterana, ou outras […]"
+    
+    Trecho da bula de criação da inquisição portuguesa "Cum ad nichil magis" de papa Clemente VII.`],
+    image: 'sala5/defeito_de_cor_1.jpg',
+    tint: 'bg-[#6e81e2]'
   },
   'sala6': {
-    title: 'Sala6 aaaaaaaaaaaaaaaaaaa',
+    title: 'Ponto de percepção',
     title_shadow: 'shadow-blue-900',
     url: 'sala6',
 
     icons: ['image'],
 
-    text: ["TextinhoAAAAAAAAAAAAAAAAAAAAAAAAAAAs"],
+    text: [`“Nós, pois, desejando providenciar, com oportunos remédios, como ao nosso ofício incumbe, […] delegamos-te e constituímos-te, a ti […] Rei João [III], por seu Embaixador e de quem, por isso, muito fiamos como Comissário nosso e da Santa Sé, bem como Inquisidor […] para que, contra todos aqueles que, convertidos à fé cristã, voltaram ao rito judaico, bem como contra aqueles que nascidos de pais cristãos abraçaram o rito judaico, ou observam a heresia Luterana, ou outras […]"
+    
+    Trecho da bula de criação da inquisição portuguesa "Cum ad nichil magis" de papa Clemente VII.`],
     image: 'sala3/capa.jpg',
-    tint: 'bg-red-950'
+    tint: 'bg-[#5c3131]'
+  },
+  'sala7': {
+    title: 'Referências',
+    title_shadow: 'shadow-blue-900',
+    url: 'sala7',
+
+    icons: ['text'],
+
+    text: [""],
+    image: '',
+    tint: 'bg-[#310b2a]'
   },
 }

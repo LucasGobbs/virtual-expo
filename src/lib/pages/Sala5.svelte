@@ -6,7 +6,7 @@
   import * as animateScroll from "svelte-scrollto";
   import { content } from "../utils/content";
 
-  const section = content["sala6"];
+  const section = content["sala5"];
   let element;
   onMount(() => {
     animateScroll.scrollTo({
@@ -19,25 +19,25 @@
 
 <div in:fade={{ duration: 1000 }} class="bg-indigo-800">
   <Section {section} />
-  <div id="scrollable" class="bg-[#0e0308] h-full">
+  <div id="scrollable" class="bg-[#2d1c81] h-full">
     <div class="text-white">
       <div class="px-5 flex flex-col items-center h-screen-80">
         <h2
           class="transition delay-50
-            text-3xl tracking-wide font-quickbold py-10"
+            text-5xl tracking-wide font-quickbold py-10"
         >
           Acervo
         </h2>
 
         <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat">Ilham Fitrotul Hayat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/bomsymbols" title="BomSymbols">BomSymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
         <div class="w-2/3 justify-center">
-          <h2 class="text-1xl tracking-wide font-quickbold py-10 text-center">
+          <h2 class="text-3xl tracking-wide font-quickbold py-10 text-center">
             Imagens
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
               title="Cortejo da Rainha Negra na Festa de Reis"
-              data="sala4/cortejo_rainha_negra.jpg"
+              data="sala5/cortejo_rainha_negra.jpg"
             >
               <p slot="text">
                 Cortejo da Rainha Negra na Festa de Reis, de Carlos Julião.
@@ -47,9 +47,12 @@
                 instrumentos de matriz africana.
               </p>
             </ImageBanner>
-            <ImageBanner title="Teste" data="sala4/quem_tem_medo.jpg">
+            <ImageBanner
+              title="Quem tem medo de macumba?"
+              data="sala5/quem_tem_medo.jpg"
+            >
               <p slot="text">
-                Em Quem tem medo de macumba?, Pai Rodney relembra os
+                Em "Quem tem medo de macumba?", Pai Rodney relembra os
                 ensinamentos da avó, Dona Aparecida: “Não mexa, não pegue nada
                 nem pise. Antes de passar, peça licença e não olhe para trás.”
                 Quando dizíamos que tínhamos visto uma “macumba”, ela
@@ -70,7 +73,7 @@
                 longa data, trazendo memórias e relatos de quando criança.
               </p>
             </ImageBanner>
-            <ImageBanner title="Macumba" data="sala4/macumba.jpg">
+            <ImageBanner title="Macumba" data="sala5/macumba.jpg">
               <p slot="text">
                 Do quimbundo, ma'kôba, macumba é uma árvore e um instrumento de
                 percussão de origem africana. Utilizado em cerimônias de
@@ -88,7 +91,16 @@
 
             <ImageBanner
               title={'"Um defeito de Cor"'}
-              data="sala4/defeito_de_cor_1.jpg"
+              data="sala5/defeito_de_cor_1.jpg"
+            >
+              <p slot="text">
+                "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
+              </p>
+            </ImageBanner>
+            <ImageBanner
+              colored
+              title={'"Um defeito de Cor"'}
+              data="sala5/defeito_de_cor_2.jpg"
             >
               <p slot="text">
                 "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
@@ -96,15 +108,7 @@
             </ImageBanner>
             <ImageBanner
               title={'"Um defeito de Cor"'}
-              data="sala4/defeito_de_cor_2.jpg"
-            >
-              <p slot="text">
-                "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
-              </p>
-            </ImageBanner>
-            <ImageBanner
-              title={'"Um defeito de Cor"'}
-              data="sala4/defeito_de_cor_3.jpg"
+              data="sala5/defeito_de_cor_3.jpg"
             >
               <p slot="text">
                 "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
@@ -113,7 +117,7 @@
             <div />
             <ImageBanner
               title={'"Um defeito de Cor"'}
-              data="sala4/defeito_de_cor_4.jpg"
+              data="sala5/defeito_de_cor_4.jpg"
             >
               <p slot="text">
                 "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
@@ -122,13 +126,13 @@
           </div>
 
           <h2
-            class="text-1xl tracking-wide font-quickbold py-10 mt-10 text-center"
+            class="text-3xl tracking-wide font-quickbold py-10 mt-10 text-center"
           >
             Casos
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <div />
-            <ImageBanner title="Jornal" data="sala4/jornal.jpg" colored="true">
+            <ImageBanner title="Jornal" data="sala5/jornal.jpg" colored="true">
               <p slot="text">
                 Falsa relação de religiões de matriz africana com bruxaria
                 estampa a manchete do Jornal de Alagoas, 4 fev. 1912, quando 150

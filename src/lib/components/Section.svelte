@@ -8,12 +8,15 @@
     title,
     title_shadow,
     text,
+    resume,
     icons,
     tint,
     filter,
     url,
   };
 
+  const textToShow =
+    (overview ? section.resume : section.text) || section.text[0];
   let iconsUrl = section.icons.map((iconName) => {
     const iconMapper = {
       image: "icons/003-image-gallery.png",
@@ -34,21 +37,23 @@
 <!-- data-aos="zoom-out" -->
 <!-- data-aos-anchor-placement="center"  -->
 <div
-  class="relative flex align-middle justify-center md:h-screen-80 lg:h-screen-90 : {section.tint}
+  class="relative w-full flex align-middle justify-center md:h-screen-80 lg:h-screen-90 : {section.tint}
   "
 >
   <div
-    class="transition delay-100 parallax
-      w-full h-full absolute bg-cover {section.tint}"
-    style="background-image: url(./images/{section.image}); filter: {section.filter};"
+    class="transition delay-100 parallax {section.tint}
+      w-full h-full absolute bg-cover"
+    style="{section.image
+      ? `background-image: url(./images/${section.image});`
+      : ''} filter: {section.filter};"
   ></div>
 
   <div class="text-white relative h-full w-2/3 bg-purple">
-    <div class="md:pt-20 lg:pt-20">
+    <div class="md:pt-20 lg:pt-20 h-1/3 overflow-hidden">
       <h2
         data-aos="zoom-out"
-        class="text-shadow-sm {section.title_shadow} transition delay-300 text-center
-        md:text-5xl xl:text-8xl : tracking-wider font-mont font-medium py-5"
+        class="text-shadow-sm {section.title_shadow} transition delay-300 text-center bg-purple
+        md:text-5xl xl:text-8xl : tracking-wider font-mont font-medium py-5 whitespace-pre-line"
       >
         {section.title.toUpperCase()}
       </h2>
@@ -66,17 +71,15 @@
         {/each}
       </div>
 
-      {#each section.text as line}
-        <p
-          data-aos="zoom-out"
-          class="transition delay-50 text-center
+      <p
+        data-aos="zoom-out"
+        class="transition delay-50 text-justify bg-[]
           md:text-base lg:text-base font-mont h-2/3
-             py-10 whitespace-pre-line
+             py-10 whitespace-pre-line truncate
             "
-        >
-          {line}
-        </p>
-      {/each}
+      >
+        {textToShow}
+      </p>
       <!-- </Carousel> -->
     </div>
   </div>
@@ -96,7 +99,7 @@
 
   .parallax {
     /* filter: grayscale(100%); */
-    /* background-color: rgb(158, 157, 157); */
+    /* background-color: rgb(83, 13, 56); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

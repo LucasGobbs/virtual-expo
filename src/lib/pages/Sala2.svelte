@@ -21,7 +21,9 @@
   <Section {section} />
   <div id="scrollable" class="bg-[#0e0308] h-full">
     <div class="text-white">
-      <div class="px-5 h-screen-80 flex flex-col items-center">
+      <div
+        class="px-5 h-screen-80 flex flex-col items-center {section.acervoTint}"
+      >
         <h2
           class="transition delay-50
             text-5xl tracking-wide font-quickbold py-10"
@@ -34,70 +36,23 @@
           <h2 class="text-3xl tracking-wide font-quickbold pt-10 text-center">
             Imagens
           </h2>
-          <h2 class="text-sm tracking-wide font-quickbold py-2 text-center">
+          <h2
+            class="text-sm tracking-wide mt-4 font-quickbold py-2 pt-2 text-center"
+          >
             Contexto Geral
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner title="Bruxas de Salém" data="sala2/bruxas_salem.jpg">
-              <p slot="text">Cena do filme "As bruxas de Salém"</p>
+              <p slot="text">Cena do filme "As bruxas de Salém" (1996).</p>
             </ImageBanner>
             <ImageBanner
               title="Julgamento de bruxaria"
               data="sala2/julgamento_bruxaria.jpg"
             >
               <p slot="text">
-                Julgamento de bruxaria. Retrato de 1692, por Granger
+                Julgamento de bruxaria. Retrato de 1692, por Granger.
               </p>
             </ImageBanner>
-            <div class="row-span-2">
-              <ImageBanner
-                title="A Bruxa (Albrecht Durer) "
-                data="sala2/a_bruxa_albrecht_durer.png"
-              >
-                <p slot="text">
-                  Na Idade Média, a feiticeira era vista como uma mulher
-                  criminosa, perversa, ignorante e supersticiosa. Ligadas a
-                  crenças pagãs arraigadas, especialmente nas áreas rurais,
-                  essas mulheres, devido à sua condição social frágil e falta de
-                  conhecimento, eram mais propensas a se envolver em práticas
-                  supersticiosas e ilusões atribuídas ao Diabo. A crença em
-                  encontros noturnos liderados por uma divindade pagã persistiu
-                  por muito tempo, levando as mulheres que compartilhavam dessas
-                  crenças a serem rotuladas como loucas pelas autoridades
-                  religiosas da época. <br /><br /> Assim, a feiticeira medieval
-                  era associada a curandeiras rurais, mulheres idosas e
-                  solitárias imersas em superstições, provocando desconfiança e
-                  medo na sociedade em que viviam. Apesar de alguns casos de
-                  repressão violenta, elas não atraíam muita atenção das
-                  autoridades eclesiásticas. <br /><br /> Na cultura
-                  eclesiástica, qualquer forma de magia era considerada
-                  inaceitável. Em Roma, a prática da magia era estritamente
-                  proibida pelas leis romanas. O crime de magia era punido
-                  severamente na tradição jurídica latina. A Lei das XII Tábuas,
-                  escrita numa sociedade agrária, condenava aqueles que usavam
-                  feitiçaria para roubar colheitas ou causar danos a outros,
-                  resultando na pena de morte por açoitamento. Em 81 a.C., Sila
-                  instituiu a Lex Cornelia de sicariis et veneficiis, marcando
-                  ações legais contra a magia, punindo aqueles que atentavam
-                  contra a vida de alguém ou utilizavam veneno para o
-                  assassinato, chamado de "veneficium". <br /><br /> Entretanto,
-                  a Europa não apenas foi um berço da civilização, mas também um
-                  berço de superstições, magia, crenças e mitos. Até os séculos
-                  XIII-XIV, a feitiçaria era condenável, mas não era considerada
-                  diabólica. A construção da imagem da feiticeira na Europa
-                  estava profundamente ligada à visão e atitudes masculinas em
-                  relação às mulheres, marcadas por contradições entre veneração
-                  e hostilidade, às vezes violentas e repressoras, fruto de uma
-                  natureza ambígua. <br /><br /> A bruxaria na Europa representou
-                  uma transição entre o final da Idade Média e o início da era moderna,
-                  perdurando até o século XVII, quando o Iluminismo começou a transformar
-                  fundamentalmente a visão de mundo. Estreitamente ligada a questões
-                  sociais e culturais, somente a partir do século XV é que práticas
-                  de feitiçaria e heresia se mesclaram no novo delito de bruxaria.
-                </p>
-              </ImageBanner>
-            </div>
-            <div />
 
             <ImageBanner
               title="Jovem acusada em 1869"
@@ -105,25 +60,41 @@
             >
               <p slot="text">
                 Retrato de uma jovem acusada em 1869 / Crédito: Thomas
-                Satterwhite Nobel
+                Satterwhite Nobel.
               </p>
             </ImageBanner>
           </div>
           <h2
-            class="text-sm tracking-wide mt-10 font-quickbold py-2 pt-8 text-center"
+            class="text-sm tracking-wide mt-4 font-quickbold py-2 pt-8 text-center"
           >
             Brasil
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
-            <ImageBanner title="Calundu" data="sala2/calundu.png">
+            <div />
+
+            <!-- <ImageBanner
+              wrapper="col-span-2"
+              title="Documentos de suspeitos de Judaizar"
+              data="sala2/documentos_judaizar.jpg"
+            >
               <p slot="text">
-                A maioria dos processos envolvendo feitiçaria tratava de
-                práticas individuais ligadas a técnicas mágicas e orações.
-                Raramente faziam menção explícita a pactos com o demônio,
-                reuniões noturnas ou práticas coletivas de ritos e cerimônias
-                religiosas.
+                Exemplos de documentos que relatam denúncias no Brasil de
+                suspeitos de "judaizar"
+              </p>
+            </ImageBanner> -->
+            <ImageBanner title="Padrões e habitos" data="sala2/padroes.jpg">
+              <p slot="text">
+                Os padrões e hábitos criminosos utilizados pela Inquisição nos
+                Domínios de Espanha e Portugal. Gravura, 1748.
               </p>
             </ImageBanner>
+          </div>
+          <h2
+            class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
+          >
+            Visitas pastoriais e do Santo Ofício no Brasil
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
               title="Ilustração de Kleber Sales/AH"
               data="sala2/ilustracao_kleber_sales_1.png"
@@ -145,14 +116,8 @@
                 bispos, vigários e missionários se apresentavam em sinal de respeito.
               </p>
             </ImageBanner>
-            <div class="row-span-2">
-              <ImageBanner title="Teste" data="sala2/tela_rugendas.png" />
-            </div>
-            <div class="col-span-1">
-              <ImageBanner title="Teste" data="sala2/calundu_carlos.jpg" />
-            </div>
             <ImageBanner
-              title="Teste"
+              title="Ilustração de Kleber Sales/AH"
               data="sala2/ilustracao_kleber_sales_2.png"
               ><p slot="text">
                 Em 1591, a chegada do primeiro dos quatro enviados parou
@@ -213,33 +178,88 @@
                 Gerais e Ceará. A extinção formal ocorreu em 1821.
               </p>
             </ImageBanner>
-            <div class="col-span-1">
-              <ImageBanner
-                title="Ilustração de Kleber Sales/AH"
-                data="sala2/tela_debret.png"
-              />
-            </div>
-
-            <div class="col-span-2">
-              <ImageBanner title="Teste" data="sala2/documentos_judaizar.jpg" />
-            </div>
-            <div class="col-span-1"></div>
-            <div class="col-span-1">
-              <ImageBanner title="Teste" data="sala2/padroes.jpg" />
-            </div>
           </div>
 
-          <h2 class="text-3xl tracking-wide font-quickbold pt-10 text-center">
+          <h2
+            class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
+          >
+            Casos
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
+            <div />
+            <ImageBanner
+              title="Tela de Debret (Apenas Ilustrativo)"
+              data="sala2/tela_debret.png"
+            >
+              <p slot="text">
+                O ano era 1754 e o local, a Justiça Eclesiástica, na cidade de
+                Jundiaí, interior de São Paulo. As rés, Thereza Leyte e
+                Escholástica Pinta da Silva, mãe e filha, estão no tribunal do
+                Santo Ofício acusadas de terem feito um pacto com o demônio e
+                matado o primeiro marido de Escholástica, Manoel Garcia,
+                utilizando feitiçarias. Essas mulheres enfrentaram acusações de
+                feitiçaria, e nos registros constam algumas práticas atribuídas
+                a elas. Por exemplo, relatos mencionam que 'Escholastica causou
+                feridas nas pernas do marido simplesmente ao tocá-las', ou ainda
+                'deixou-o cego apenas por tocar nos olhos dele'. Há também
+                menções de que 'Manoel Garcia sentiu enjoos e dores no estômago
+                após a mulher mexer com as mãos em um prato de comida dele'.<br
+                /><br /> O processo contra Thereza e Escholastica foi iniciado oito
+                anos após a morte de Garcia, e a Justiça Eclesiástica ouviu testemunhas,
+                todas do sexo masculino. Estigmatizar mulheres, e ocasionalmente
+                homens, era um passo crucial na construção coletiva do estereótipo
+                da feitiçaria. Apesar das tensões com a Igreja, as testemunhas defenderam
+                as acusadas. Alegaram que Manoel faleceu de lepra e que Francisco,
+                autor das acusações, já tinha sido preso e punido por difamar as
+                duas mulheres. Inclusive, elas receberam um pedido público de desculpas
+                dele. Após a conclusão do processo em 1755, Thereza e Escholastica
+                foram consideradas inocentes, e os familiares de Manoel arcarem com
+                as despesas judiciais. Sob uma perspectiva histórica, esse documento
+                revela a fragilidade e vulnerabilidade das mulheres após a morte
+                de uma figura masculina dominante.
+              </p>
+            </ImageBanner>
+          </div>
+
+          <h2
+            class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
+          >
             Videos
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <div />
             <ImageBanner
-              title="Video de Bruxa"
+              title="“O Martelo das Bruxas” (1970)"
               thumbnail="sala2/video_bruxa_thumb.png"
               data="sala2/video_bruxa.mp4"
             >
-              <p slot="text">test</p>
+              <p slot="text">
+                Trechos do filme: “O Martelo das Bruxas” (1970), de Otakar Vávra
+                - No século XVII, em um condado na região da República Tcheca,
+                uma mendiga tenta roubar uma hóstia para realizar um ritual,
+                desencadeando uma série de julgamentos e perseguições pela
+                Inquisição. O filme é baseado em registros históricos autênticos
+                de diversos processos contra pessoas acusadas de bruxaria - os
+                depoimentos dos réus são transcrições desses registros.<br /><br
+                />
+                A obra é impactante ao retratar de maneira crua como os julgamentos
+                eram conduzidos pelos inquisidores, detentores de poder supremo.
+                Por meio de torturas brutais, os acusados acabavam confessando qualquer
+                coisa indicada pelos inquisidores, inclusive denunciando pessoas
+                sugeridas por eles. Na trama, um estalajadeiro sem educação formal
+                e moral duvidosa, que outrora foi inquisidor, é designado para liderar
+                o julgamento da mendiga. Ele a coage a delatar vizinhos e conhecidos,
+                desencadeando uma cadeia de acusações que leva à condenação à morte
+                de metade do condado. Isso inclui indivíduos influentes e desafetos
+                - todos aqueles que, por bom senso ou compaixão, se opunham aos interesses
+                do inquisidor.
+                <br /><br />O trecho destacado traz duas cenas distintas:
+                primeiro o interrogatório de Susana, antes da tortura, para que
+                ela confesse a bruxaria e as relações pecaminosas com um padre
+                (que era inocente, mas er aum desafeto do inquisidor). Depois,
+                Susana é mostrada já profundamente afetada pelas torturas e
+                confessando tudo aquilo que lhe foi apresentado e questionado.
+              </p>
             </ImageBanner>
           </div>
         </div>

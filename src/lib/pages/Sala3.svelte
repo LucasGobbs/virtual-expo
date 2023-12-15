@@ -9,30 +9,32 @@
   const section = content["sala3"];
   let element;
   onMount(() => {
-    // animateScroll.scrollTo({
-    //   element: "#scrollable",
-    //   duration: 2000,
-    //   delay: 400,
-    // });
+    animateScroll.scrollTo({
+      element: "#scrollable",
+      duration: 2000,
+      delay: 400,
+    });
   });
 </script>
 
-<div in:fade={{ duration: 1000 }} class="bg-indigo-800">
+<div in:fade={{ duration: 1000 }} class={section.acervoTint}>
   <Section {section} />
-  <div id="scrollable" class="bg-[#0e0308] h-full">
-    <div class="text-white">
+  <div id="scrollable" class="{section.acervoTint} h-full">
+    <div class="text-white bg-[#100c3d]">
       <div class="px-5 flex flex-col items-center h-screen-80">
         <h2
           class="transition delay-50
-            text-3xl tracking-wide font-quickbold py-10"
+            text-5xl tracking-wide font-quickbold py-10"
         >
           Acervo
         </h2>
 
         <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat">Ilham Fitrotul Hayat</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/bomsymbols" title="BomSymbols">BomSymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
         <div class="w-2/3 justify-center">
-          <h2 class="text-1xl tracking-wide font-quickbold py-10 text-center">
-            Contexto Geral
+          <h2
+            class="text-3xl tracking-wide font-quickbold pb-5 pt-10 text-center"
+          >
+            Imagens
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
@@ -48,17 +50,23 @@
                 </a>
               </p>
             </ImageBanner>
-            <ImageBanner title="Teste" data="sala3/execution_criminals.jpg">
+            <ImageBanner
+              title="Execution des criminels condamnées par l'Inquisition"
+              data="sala3/execution_criminals.jpg"
+            >
               <p slot="text">
                 Execution des criminels condamnées par l'Inquisition (autoria
-                desconhecida, século XVIII).<br /><br /> Disponível em:
-                <a
+                desconhecida, século XVIII).<br /><br />
+                <!-- <a
                   href="https://pt.wikipedia.org/wiki/Ficheiro:A_Expuls%C3%A3o_dos_Judeus_(Roque_Gameiro,_Quadros_da_Hist%C3%B3ria_de_Portugal,_1917).png"
                   >Link
-                </a>
+                </a> -->
               </p>
             </ImageBanner>
-            <ImageBanner title="Teste" data="sala3/historia_lisboa.png">
+            <ImageBanner
+              title="Mural de Nuno Saraiva"
+              data="sala3/historia_lisboa.png"
+            >
               <p slot="text">
                 "História de Lisboa", por Nuno Saraiva, mural na Rua Norberto de
                 Araújo, Lisboa, Portugal, 8 fev. 2018.<br /><br /> Disponível
@@ -69,7 +77,13 @@
                 </a>
               </p>
             </ImageBanner>
-
+          </div>
+          <h2
+            class="text-3xl tracking-wide font-quickbold pb-5 pt-10 text-center"
+          >
+            Mapas
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
               wrapper="col-span-2"
               title="Countries from which Jews were expelled,"
@@ -98,16 +112,35 @@
                 </a>
               </p>
             </ImageBanner>
+          </div>
+          <h2
+            class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
+          >
+            Videos
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
-              wrapper="col-span-2"
-              title="??????"
-              data={["sala3/video1.mp4", "sala3/video2.mp4"]}
+              colored="true"
+              wrapper="col-span-1"
+              title="(Trechos do filme 1618 de Luís Ismael)"
+              data="sala3/video1.mp4"
               thumbnail="sala3/video_1_thumb.png"
             >
-              <p slot="text">(Trechos do filme 1618 de Luís Ismael)</p>
+              <p slot="text"></p>
+            </ImageBanner>
+            <ImageBanner
+              colored="true"
+              wrapper="col-span-1"
+              title="(Trechos do filme 1618 de Luís Ismael)"
+              data="sala3/video2.mp4"
+              thumbnail="sala3/video_2_thumb.png"
+            >
+              <p slot="text"></p>
             </ImageBanner>
           </div>
-          <h2 class="text-1xl tracking-wide font-quickbold py-10 text-center">
+          <h2
+            class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
+          >
             Fontes Primárias
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
@@ -232,7 +265,14 @@
                 costume dixe nada.”
               </p>
             </ImageBanner>
+          </div>
 
+          <h2
+            class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
+          >
+            Extras
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
               title="Quadro Práticas Judaizantes Família Dias-Fernandes"
               data={[
@@ -242,13 +282,6 @@
             >
               <p slot="text"></p>
             </ImageBanner>
-          </div>
-
-          <h2 class="text-1xl tracking-wide font-quickbold py-10 text-center">
-            Extras
-          </h2>
-          <div class="w-full grid grid-cols-3 gap-4">
-            <div />
             <ImageBanner
               title="Quadro Práticas Judaizantes Família Dias-Fernandes"
               data={"sala3/sobrenomes.png"}
