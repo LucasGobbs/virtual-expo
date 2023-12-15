@@ -189,27 +189,6 @@
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
-              title="Falsa relação de religiões de matriz africana com bruxaria
-            estampa a manchete do Jornal de Alagoas"
-              data="sala5/jornal.jpg"
-              colored="true"
-            >
-              <p slot="text">
-                Falsa relação de religiões de matriz africana com bruxaria
-                estampa a manchete do Jornal de Alagoas, 4 fev. 1912, quando 150
-                xangôs foram destruídos naquele que entraria para a história
-                como o maior ato de intolerância religiosa do Brasil. Fonte:
-                Acervo do Instituto Histórico e Geográfico de Alagoas. <br />
-                <br />“Xangô em acção — A oligarchia e o O povo invade os covis
-                — Documentos preciosos — Um bode sacrificado — Exposição de
-                ídolos e bugigangas” , acompanha o título da reportagem BRUXARIA
-                na capa do Jornal de Alagoas de 4 de fevereiro de 1912.<br /><br
-                /> A resistência da religiosidade de matriz africana em Alagoas -
-                Jornalismo Júnior (jornalismojunior.com.br)
-              </p>
-            </ImageBanner>
-
-            <ImageBanner
               title="Jornal"
               data={[
                 "sala5/lazaro_1.jpg",
@@ -250,11 +229,29 @@
                 críticas sobre intolerância religiosa (poder360.com.br)
               </p>
             </ImageBanner>
-
+            <ImageBanner
+              title="Falsa relação de religiões de matriz africana com bruxaria
+          estampa a manchete do Jornal de Alagoas"
+              data="sala5/jornal.jpg"
+              colored="true"
+            >
+              <p slot="text">
+                Falsa relação de religiões de matriz africana com bruxaria
+                estampa a manchete do Jornal de Alagoas, 4 fev. 1912, quando 150
+                xangôs foram destruídos naquele que entraria para a história
+                como o maior ato de intolerância religiosa do Brasil. Fonte:
+                Acervo do Instituto Histórico e Geográfico de Alagoas. <br />
+                <br />“Xangô em acção — A oligarchia e o O povo invade os covis
+                — Documentos preciosos — Um bode sacrificado — Exposição de
+                ídolos e bugigangas” , acompanha o título da reportagem BRUXARIA
+                na capa do Jornal de Alagoas de 4 de fevereiro de 1912.<br /><br
+                /> A resistência da religiosidade de matriz africana em Alagoas -
+                Jornalismo Júnior (jornalismojunior.com.br)
+              </p>
+            </ImageBanner>
             <ImageBanner
               title="Terreiro de candomblé é destruído em Duque de Caxias, na Baixada Fluminense"
               data="sala5/reportagem_6.jpg"
-              colored="true"
             >
               <p slot="text">
                 Traficantes atacaram um terreiro de candomblé localizado no
@@ -267,7 +264,6 @@
             <ImageBanner
               title="Um Rio de ódio: terreiro de candomblé é atacado com pedras, ovos e legumes podres"
               data="sala5/reportagem_7.jpg"
-              colored="true"
             >
               <p slot="text">
                 Os feixes de luz que, durante o dia, invadem o terreiro Ilê Axé
@@ -289,7 +285,6 @@
             <ImageBanner
               title="Ex-prefeito detalha “bruxaria” de adversária e é absolvido em ação"
               data="sala5/reportagem_8.jpg"
-              colored="true"
             >
               <p slot="text">
                 A Justiça absolveu o ex-prefeito de Itaúba (580 km de Cuiabá),
