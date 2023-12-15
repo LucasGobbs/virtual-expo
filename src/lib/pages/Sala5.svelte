@@ -188,7 +188,6 @@
             Casos
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
-            <div />
             <ImageBanner
               title="Falsa relação de religiões de matriz africana com bruxaria
             estampa a manchete do Jornal de Alagoas"
@@ -249,6 +248,56 @@
                 <br /><br />Polícia divulga fotos da casa de Lázaro em Goiás |
                 Goiás | G1 (globo.com) Caso Lázaro: G1 pede desculpas depois de
                 críticas sobre intolerância religiosa (poder360.com.br)
+              </p>
+            </ImageBanner>
+
+            <ImageBanner
+              title="Terreiro de candomblé é destruído em Duque de Caxias, na Baixada Fluminense"
+              data="sala5/reportagem_6.jpg"
+              colored="true"
+            >
+              <p slot="text">
+                Traficantes atacaram um terreiro de candomblé localizado no
+                bairro Parque Paulista, em Duque de Caxias, na Baixada
+                Fluminense. O crime ocorreu nesta quinta-feira (11).<br />
+                Disponível em:<br />
+                https://g1.globo.com/rj/rio-de-janeiro/noticia/2019/07/12/terreiro-de-candomble-e-destruido-em-duque-de-caxias-na-baixada-fluminense.ghtml
+              </p>
+            </ImageBanner>
+            <ImageBanner
+              title="Um Rio de ódio: terreiro de candomblé é atacado com pedras, ovos e legumes podres"
+              data="sala5/reportagem_7.jpg"
+              colored="true"
+            >
+              <p slot="text">
+                Os feixes de luz que, durante o dia, invadem o terreiro Ilê Axé
+                Obá Inã, na Penha, Zona Norte do Rio, não têm nenhuma motivação
+                decorativa ou espiritual. Os buracos nas telhas de alumínio, por
+                onde os raios de sol invadem o local de culto, são reflexo do
+                preconceito, manifestado na forma de pedras portuguesas lançadas
+                recorrentemente sobre o espaço há pelo menos um ano e meio,
+                perfurando o teto e a dignidade dos frequentadores — uma
+                perseguição que não cessou nem com as denúncias à polícia. No
+                terceiro dia da série de reportagens “Um Rio de ódio”, o EXTRA
+                revela a marca da intolerância religiosa no estado, que em mais
+                de um terço dos registros de ocorrência do gênero atinge
+                seguidores da umbanda e do candomblé.<br />
+                Disponível em:<br />
+                https://extra.globo.com/casos-de-policia/um-rio-de-odio-terreiro-de-candomble-atacado-com-pedras-ovos-legumes-podres-21645654.html
+              </p>
+            </ImageBanner>
+            <ImageBanner
+              title="Ex-prefeito detalha “bruxaria” de adversária e é absolvido em ação"
+              data="sala5/reportagem_8.jpg"
+              colored="true"
+            >
+              <p slot="text">
+                A Justiça absolveu o ex-prefeito de Itaúba (580 km de Cuiabá),
+                Raimundo Zanon (PSD), em uma ação penal por injúria movida pela
+                sua adversária na campanha de 2012, Rosana Rebussi (PTB), em
+                razão de tê-la acusado de fazer “bruxaria” contra ele..<br />
+                Disponível em:<br />
+                https://www.midianews.com.br/judiciario/ex-prefeito-detalha-bruxaria-de-adversaria-e-e-absolvido-em-acao/312141
               </p>
             </ImageBanner>
           </div>
