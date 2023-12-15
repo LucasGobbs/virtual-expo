@@ -62,7 +62,7 @@
       <div class="w-2/3 flex flex-col justify-between items-center">
         <div class="flex flex-col justify-center items-center">
           <h2
-            class="transition delay-50 text-[#d05d50]
+            class="transition delay-50 text-[#d05d50] w-full
             md:text-4xl lg:text-4xl tracking-wide font-mont font-bold leading-tight"
           >
             Mulheres e Bruxaria:<br /> Um casamento indissolúvel na Idade Moderna

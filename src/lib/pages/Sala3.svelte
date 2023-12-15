@@ -8,9 +8,9 @@
 
   const section = content["sala3"];
   let element;
-  let celebration;
+  let sound;
   onMount(() => {
-    celebration.play();
+    sound.play();
     animateScroll.scrollTo({
       element: "#scrollable",
       duration: 2000,
@@ -25,7 +25,7 @@
     src="./images/sala2/whispers.m4a"
     preload="auto"
     loop
-    bind:this={celebration}
+    bind:this={sound}
   >
     <track kind="captions" />
   </audio>

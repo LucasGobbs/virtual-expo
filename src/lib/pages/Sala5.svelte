@@ -19,7 +19,7 @@
 
 <div in:fade={{ duration: 1000 }} class="bg-indigo-800">
   <Section {section} />
-  <div id="scrollable" class="bg-[#2d1c81] h-full">
+  <div id="scrollable" class="bg-[#29253d] h-full">
     <div class="text-white">
       <div class="px-5 flex flex-col items-center h-screen-80">
         <h2
@@ -36,18 +36,7 @@
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
-              title="Cortejo da Rainha Negra na Festa de Reis"
-              data="sala5/cortejo_rainha_negra.jpg"
-            >
-              <p slot="text">
-                Cortejo da Rainha Negra na Festa de Reis, de Carlos Julião.
-                Fonte: Acervo iconográfico Biblioteca Nacional Entre as
-                ilustrações de Carlos Julião (1740-1811), destaque para a
-                representação da cerimônia da rainha já coroada, com
-                instrumentos de matriz africana.
-              </p>
-            </ImageBanner>
-            <ImageBanner
+              wrapper="col-span-2"
               title="Quem tem medo de macumba?"
               data="sala5/quem_tem_medo.jpg"
             >
@@ -88,17 +77,9 @@
                 não dialoga com o diferente.
               </p>
             </ImageBanner>
-
-            <ImageBanner
-              title={'"Um defeito de Cor"'}
-              data="sala5/defeito_de_cor_1.jpg"
-            >
-              <p slot="text">
-                "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
-              </p>
-            </ImageBanner>
             <ImageBanner
               colored
+              wrapper="col-span-1"
               title={'"Um defeito de Cor"'}
               data="sala5/defeito_de_cor_2.jpg"
             >
@@ -108,7 +89,16 @@
             </ImageBanner>
             <ImageBanner
               title={'"Um defeito de Cor"'}
-              data="sala5/defeito_de_cor_3.jpg"
+              data="sala5/defeito_de_cor_1.jpg"
+            >
+              <p slot="text">
+                "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
+              </p>
+            </ImageBanner>
+
+            <ImageBanner
+              title={'"Um defeito de Cor"'}
+              data="sala5/defeito_de_cor_4.jpg"
             >
               <p slot="text">
                 "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).
@@ -117,7 +107,7 @@
             <div />
             <ImageBanner
               title={'"Um defeito de Cor"'}
-              data="sala5/defeito_de_cor_4.jpg"
+              data="sala5/defeito_de_cor_3.jpg"
             >
               <p slot="text">
                 "Um defeito de cor", Museu de Arte do Rio de Janeiro (2023).

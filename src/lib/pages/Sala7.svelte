@@ -26,6 +26,12 @@
           class="transition delay-50
             text-3xl tracking-wide font-quickbold py-10"
         ></h2>
+        <h2
+          class="transition delay-50
+            text-3xl tracking-wide font-quickbold py-10"
+        >
+          Em construção
+        </h2>
       </div>
     </div>
   </div>

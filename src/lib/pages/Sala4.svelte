@@ -8,7 +8,9 @@
 
   const section = content["sala4"];
   let element;
+  let sound;
   onMount(() => {
+    sound.play();
     animateScroll.scrollTo({
       element: "#scrollable",
       duration: 2000,
@@ -18,12 +20,13 @@
 </script>
 
 <div in:fade={{ duration: 1000 }} class="bg-indigo-800">
+  <audio src="./images/sala4/som.m4a" preload="auto" loop bind:this={sound}>
+    <track kind="captions" />
+  </audio>
   <Section {section} />
   <div id="scrollable" class="bg-[#0e0308] h-full">
     <div class="text-white">
-      <div
-        class="px-5 h-screen-80 flex flex-col items-center bg-[#4a261e] {section.acervoTint}"
-      >
+      <div class="px-5 h-screen-80 flex flex-col items-center bg-[#0d0f33]">
         <h2
           class="transition delay-50
             text-5xl tracking-wide font-quickbold py-10"
@@ -66,6 +69,48 @@
               <p slot="text">Calundu - pintura de Carlos Julião</p>
             </ImageBanner>
 
+            <ImageBanner title="Mulheres no Candomblé" data="sala4/can1.jpg">
+              <p slot="text"></p>
+            </ImageBanner>
+            <ImageBanner
+              colored
+              title="Mulheres no Candomblé"
+              data="sala4/can2.jpg"
+            ></ImageBanner>
+            <ImageBanner title="Oxum" data="sala4/can3.jpg">
+              <p slot="text"></p>
+            </ImageBanner>
+            <ImageBanner title="Omolu" data="sala4/can4.png">
+              <p slot="text">Orixa da saúde e cura com ervas mediciais</p>
+            </ImageBanner>
+            <ImageBanner title="Feitura de Santo" data="sala4/fsanto1.png">
+              <p slot="text"></p>
+            </ImageBanner>
+            <ImageBanner title="Feitura de Santo" data="sala4/fsanto2.jpg">
+              <p slot="text"></p>
+            </ImageBanner>
+            <ImageBanner
+              title="Maceramento de Ervas"
+              data="sala4/abo_2_alta_alexferro.jpg"
+            >
+              <p slot="text">
+                Ervas sendo maceradas para fazer o abô (banho com ervas
+                sagradas) Foto: Alex Ferro / Divulgação
+              </p>
+            </ImageBanner>
+
+            <ImageBanner
+              title="Banho de Ervas"
+              data="sala4/abo_alta_alexferro.jpg"
+            >
+              <p slot="text">
+                Filhas de santo do Ilê Omolu Oxum preparam banho de abô Foto:
+                Alex Ferro / Divulgação
+              </p>
+            </ImageBanner>
+            <ImageBanner title="Jogo de Búzios" data="sala4/buzios.png">
+              <p slot="text"></p>
+            </ImageBanner>
             <!-- <ImageBanner
               wrapper="col-span-2"
               title="Documentos de suspeitos de Judaizar"
@@ -78,6 +123,22 @@
             </ImageBanner> -->
           </div>
 
+          <h2
+            class="text-3xl tracking-wide font-quickbold py-10 mt-10 text-center"
+          >
+            Videos
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
+            <div />
+            <ImageBanner
+              title={"O campo das ‘feiticeiras’"}
+              data={"sala4/video.png"}
+            >
+              <p slot="text">
+                Disponível em: https://www.youtube.com/watch?v=sQLYrAeIvIE
+              </p>
+            </ImageBanner>
+          </div>
           <h2
             class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
           >
@@ -126,22 +187,6 @@
                 a forte associação com o sobrenatural e as
                 tendências demoníacas.
               </p>
-            </ImageBanner>
-          </div>
-
-          <h2
-            class="text-3xl tracking-wide font-quickbold pt-10 pb-5 text-center"
-          >
-            Videos
-          </h2>
-          <div class="w-full grid grid-cols-3 gap-4">
-            <div />
-            <ImageBanner
-              title="“O Martelo das Bruxas” (1970)"
-              thumbnail="sala2/video_bruxa_thumb.png"
-              data="sala2/video_bruxa.mp4"
-            >
-              <p slot="text"></p>
             </ImageBanner>
           </div>
         </div>

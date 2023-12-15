@@ -37,7 +37,7 @@
 <!-- data-aos="zoom-out" -->
 <!-- data-aos-anchor-placement="center"  -->
 <div
-  class="relative w-full flex align-middle justify-center md:h-screen-80 lg:h-screen-90 : {section.tint}
+  class="relative w-full flex align-middle justify-center md:h-screen-80 lg:h-screen-90 : {section.tint} 
   "
 >
   <div

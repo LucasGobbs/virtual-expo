@@ -11,7 +11,9 @@
 
   import { Sound } from "svelte-sound";
 
+  let sound;
   onMount(() => {
+    sound.play();
     animateScroll.scrollTo({
       element: "#scrollable",
       duration: 2000,
@@ -21,6 +23,9 @@
 </script>
 
 <div in:fade={{ duration: 1000 }} class="bg-indigo-800">
+  <audio src="./images/sala2/som.m4a" preload="auto" loop bind:this={sound}>
+    <track kind="captions" />
+  </audio>
   <Section {section} />
   <div id="scrollable" class="bg-[#0e0308] h-full">
     <div class="text-white">
