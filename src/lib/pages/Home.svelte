@@ -78,7 +78,7 @@
             class="transition delay-50 opacity-60
             md:text-md text-sm tracking-wide font-mont py-1 w-full"
           >
-            Curadouras: Ariel de Oliveira, Karen da Silva, Mairá Gomes, Mariana
+            Curadoras: Ariel de Oliveira, Karen da Silva, Mairá Gomes, Mariana
             Chaves, Millena Delfino e Nathália Rouxinol
           </h3>
           <p class="md:text-lg lg:text-xl pt-4 text-justify">
