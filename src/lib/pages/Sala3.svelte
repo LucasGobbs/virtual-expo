@@ -96,11 +96,11 @@
           <div class="w-full grid grid-cols-3 gap-4">
             <ImageBanner
               wrapper="col-span-2"
-              title="Countries from which Jews were expelled,"
+              title="Países dos quais os judeus foram expulsos"
               data="sala3/mapa1.jpg"
             >
               <p slot="text">
-                Countries from which Jews were expelled, 15th-17th Centuries.<br
+                Países dos quais os judeus foram expulsos, Séculos 15 à 17<br
                 /><br /> Disponível em:
                 <a
                   href="https://commons.princeton.edu/mg/countries-from-which-jews-were-expelled-15th-17th-centuries/"
@@ -110,11 +110,11 @@
             </ImageBanner>
 
             <ImageBanner
-              title="Expulsion of the Jews from the Iberian Peninsula."
+              title="Expulsão dos judeus da Península Ibérica"
               data="sala3/mapa2.jpg"
             >
               <p slot="text">
-                Expulsion of the Jews from the Iberian Peninsula.<br /><br />
+                Expulsão dos judeus da Península Ibérica.<br /><br />
                 Disponível em:
                 <a
                   href="https://commons.princeton.edu/mg/expulsion-of-the-jews-from-the-iberian-peninsula/"
@@ -290,13 +290,25 @@
                 "sala3/quadro_praticas_2.png",
               ]}
             >
-              <p slot="text"></p>
+              <p slot="text">
+                VEIGA, Suzana do Nascimento. Segundo as judias costumavam fazer:
+                as Dias-Fernandes e o criptojudaísmo feminino no Pernambuco do
+                século XVI. 2013. 137 f. Dissertação (Programa de Pós-Graduação
+                em História) - Universidade Federal Rural de Pernambuco, Recife.
+                Disponível em:
+                http://www.tede2.ufrpe.br:8080/tede2/handle/tede2/4800
+              </p>
             </ImageBanner>
             <ImageBanner
-              title="Quadro Práticas Judaizantes Família Dias-Fernandes"
+              title="Sobrenomes de cristãos-novos mais frequentes em Minas Gerais no século XVIII"
               data={"sala3/sobrenomes.png"}
             >
-              <p slot="text"></p>
+              <p slot="text">
+                GUIMARÃES, Marcelo Miranda. Traditions and Customs of the
+                Marranos from Minas Gerais, Brazil. Teaching from Zion,
+                Jerusalém, v. 28, p.22-23, nov. 2010. Disponível em:
+                https://netivyah.org/the-marranos-a-forgotten-treasure-being-discovered-today/.
+              </p>
             </ImageBanner>
             <div />
           </div>

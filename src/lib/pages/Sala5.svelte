@@ -8,7 +8,9 @@
 
   const section = content["sala5"];
   let element;
+  let sound;
   onMount(() => {
+    sound.play();
     animateScroll.scrollTo({
       element: "#scrollable",
       duration: 2000,
@@ -18,6 +20,9 @@
 </script>
 
 <div in:fade={{ duration: 1000 }} class="bg-[#29253d]">
+  <audio src="./images/sala5/som.m4a" preload="auto" loop bind:this={sound}>
+    <track kind="captions" />
+  </audio>
   <Section {section} />
   <div id="scrollable" class="bg-[#29253d] h-full">
     <div class="text-white">

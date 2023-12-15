@@ -9,8 +9,6 @@
   const section = content["sala2"];
   let element;
 
-  import { Sound } from "svelte-sound";
-
   let sound;
   onMount(() => {
     sound.play();
