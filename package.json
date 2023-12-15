@@ -36,6 +36,7 @@
     "svelte-device-info": "^1.0.0",
     "svelte-material-icons": "^3.0.5",
     "svelte-scrollto": "^0.2.0",
+    "svelte-sound": "^0.6.0",
     "svelte-spa-router": "^4.0.0",
     "svelte-video-player": "^1.2.5",
     "svrollbar": "^0.12.0"

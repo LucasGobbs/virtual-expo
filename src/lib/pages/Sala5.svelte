@@ -9,11 +9,11 @@
   const section = content["sala5"];
   let element;
   onMount(() => {
-    animateScroll.scrollTo({
-      element: "#scrollable",
-      duration: 2000,
-      delay: 400,
-    });
+    // animateScroll.scrollTo({
+    //   element: "#scrollable",
+    //   duration: 2000,
+    //   delay: 400,
+    // });
   });
 </script>
 
@@ -128,11 +128,78 @@
           <h2
             class="text-3xl tracking-wide font-quickbold py-10 mt-10 text-center"
           >
+            Videos
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
+            <ImageBanner
+              title={"Documentário A dona do terreiro"}
+              data={"https://www.youtube.com/embed/6wP1Tg8MF2I?si=5Z_tk1Dzqh4sC2dF&amp;clip=Ugkx5gHYTOH6Ed3t08vknNWOz-icOLa4_1Nz&amp;clipt=EJ_eBhi30wc"}
+              thumbnail="sala5/a_dona_terreiro_thumb.png"
+            >
+              <p slot="text"></p>
+            </ImageBanner>
+            <ImageBanner
+              title={'Documentário IGI OBA NILE "Memórias de Mãe Raidalva"'}
+              data={"https://www.youtube.com/embed/IAUx0PHMysw?si=YIbVWb3BkF8iXHZK&amp;clip=Ugkx-qr8yOI9IbQiJszMuT8lFsX2qg30VeF-&amp;clipt=EPXG8AEYjbzxAQ"}
+              thumbnail="sala5/ig_oba_nile_thumb.png"
+            >
+              <p slot="text"></p>
+            </ImageBanner>
+
+            <ImageBanner
+              title={"Documentário A FLOR DO CANDOMBLÉ"}
+              data={"https://www.youtube.com/embed/UmzuWFFJz2k?si=D89gU8s1djCLdWiw"}
+              thumbnail="sala5/a_flor_thumb.png"
+            >
+              <p slot="text"></p>
+            </ImageBanner>
+
+            <ImageBanner
+              title={"Documentário de Umbanda - Maria do Espírito Santo - Preta Mandinga"}
+              data={"https://www.youtube.com/embed/BrhM2XZx1nk?si=3bs7wqLVXMx4ZHwG&amp;clip=Ugkx2LWXZx5wNvt0xpW4zRxR_E2d7zTYea74&amp;clipt=EJvIAxjmgQU"}
+              thumbnail="sala5/maria_thumb.png"
+            >
+              <p slot="text"></p>
+            </ImageBanner>
+
+            <ImageBanner
+              title={"Documentário Dona Luiza Yemanjá"}
+              data={"https://www.youtube.com/embed/DgnZjoBgejY?si=vYMElNXEdoX44iMt"}
+              thumbnail="sala5/luiza_thumb.png"
+            >
+              <p slot="text"></p>
+            </ImageBanner>
+
+            <ImageBanner
+              title={"Documentário Mãe Stella de Oxossi"}
+              data={"https://www.youtube.com/embed/vSCeTpCGKQY?si=Gq-mrUJvqKH73UtF&amp;clip=UgkxFyl342q2A9_-4T9C1psFvYWdwmtszm1m&amp;clipt=ENrCARi5lwU"}
+              thumbnail="sala5/mae_thumb.png"
+            >
+              <p slot="text"></p>
+            </ImageBanner>
+            <div />
+            <ImageBanner
+              title={"Documentário Folhas Encantadas"}
+              data={"https://www.youtube.com/embed/aT-Ng2Yw6QM?si=TAThm4a5yrXoIts0&amp;clip=UgkxdBQdWoxhRmP3zkif_TRMGWH6GMDLSSVU&amp;clipt=EKm2Kxjl5S4"}
+              thumbnail="sala5/folhas_thumb.png"
+            >
+              <p slot="text"></p>
+            </ImageBanner>
+          </div>
+
+          <h2
+            class="text-3xl tracking-wide font-quickbold py-10 mt-10 text-center"
+          >
             Casos
           </h2>
           <div class="w-full grid grid-cols-3 gap-4">
             <div />
-            <ImageBanner title="Jornal" data="sala5/jornal.jpg" colored="true">
+            <ImageBanner
+              title="Falsa relação de religiões de matriz africana com bruxaria
+            estampa a manchete do Jornal de Alagoas"
+              data="sala5/jornal.jpg"
+              colored="true"
+            >
               <p slot="text">
                 Falsa relação de religiões de matriz africana com bruxaria
                 estampa a manchete do Jornal de Alagoas, 4 fev. 1912, quando 150
@@ -147,6 +214,144 @@
                 Jornalismo Júnior (jornalismojunior.com.br)
               </p>
             </ImageBanner>
+
+            <ImageBanner
+              title="Jornal"
+              data={[
+                "sala5/lazaro_1.jpg",
+                "sala5/lazaro_2.jpg",
+                "sala5/lazaro_3.jpg",
+              ]}
+            >
+              <p slot="text">
+                Num tempo não tão distante, o caso do assassino Lázaro
+                amedrontou criancinhas e adultos de todo o Brasil. Após matar
+                uma família inteira e fugir da polícia por sete dias, o que
+                tinha tudo para ser um filme de ação, com muita morte, sangue e
+                fuga pelo caminho, ganhava as páginas online do portal G1 como
+                um thriller de terror, com muita morte, sangue e preconceito.
+
+                <br /><br />“Fotos mostram que casa de Lázaro Barbosa, suspeito
+                de chacina em Ceilândia, tem itens que indicam bruxaria e
+                rituais, diz polícia”.
+
+                <br /><br />O título rapidamente ganhou as redes.
+                Preconceituosamente sensacionalista, a manchete veiculada no
+                portal G1, em 16 de junho de 2021, parecia replicar práticas que
+                há mais de 100 anos se vestem de acesso à informação –
+                lembrem-se do Quebra de Xangô de 1912 - quando, no fundo, no
+                fundo (e na superfície mais que tudo) só espalham preconceito.
+
+                <br /><br />Não demorou muito para que o público passasse a
+                relacionar a foto divulgada na matéria (uma imagem aleatória de
+                um assentamento de Exu que não tem nada a ver com bruxaria,
+                criminalidade, Lázaro) com religiões de matrizes africanas.
+                Ataques intolerantes e racistas ocuparam as redes. Após a
+                repercussão, o portal desculpou-se “pelos erros no processo de
+                publicação desta reportagem”, editando o texto e alterando o
+                título para “Polícia divulga fotos da casa de Lázaro em Goiás”.
+
+                <br /><br />Polícia divulga fotos da casa de Lázaro em Goiás |
+                Goiás | G1 (globo.com) Caso Lázaro: G1 pede desculpas depois de
+                críticas sobre intolerância religiosa (poder360.com.br)
+              </p>
+            </ImageBanner>
+          </div>
+
+          <h2
+            class="text-3xl tracking-wide font-quickbold py-10 mt-10 text-center"
+          >
+            Extras
+          </h2>
+          <div class="w-full grid grid-cols-3 gap-4">
+            <ImageBanner
+              title="Cadastro dos espaços de matriz africanas será apresentado"
+              data="sala5/reportagem_1.jpg"
+            >
+              <p slot="text">
+                O cadastramento dos espaços de matriz africana e comunidades de
+                terreiros da região metropolitana de João Pessoa, resultante de
+                uma parceria entre a Casa de Cultura Ilê Asé D'Osoguiã e o
+                Governo do Estado, por meio da Secretaria de Estado da Mulher e
+                da Diversidade Humana (Semdh), será apresentado nesta
+                terça-feira (21), às 8h, na sede da Ordem dos Advogados do
+                Brasil (OAB-PB), em João Pessoa, pelo Instituto de Planejamento,
+                Pesquisa, Comunicação, Estudos Sociais e Tecnológicos (IPPECET).
+
+                <br /><br />Disponível em:
+                https://paraiba.pb.gov.br/noticias/cadastro-dos-espacos-de-matriz-africana-sera-apresentado-nesta-terca-feira
+              </p>
+            </ImageBanner>
+            <ImageBanner
+              title="Pesquisa do Instituto Darcy Ribeiro identifica 300 templos religiosos em Maricá"
+              data="sala5/reportagem_2.jpg"
+            >
+              <p slot="text">
+                A Prefeitura de Maricá, por meio do Instituto Municipal de
+                Informação e Pesquisa Darcy Ribeiro (IDR), apresentou nesta
+                quarta-feira (20/09), no auditório da Câmara Municipal de
+                Maricá, o resultado do Censo Matriz Africana e Terreiros, que
+                identificou 300 templos religiosos no município. Deste total,
+                235 pesquisas foram realizadas pela equipe, 44 estavam fechados
+                permanentemente e 22 recusas ou ausentes. A parcial foi
+                apresentada aos grupos que realizam práticas ritualísticas e
+                ancestrais em todo o território de Maricá.
+
+                <br /> <br />Disponível em:
+                https://www.marica.rj.gov.br/noticia/pesquisa-do-instituto-darcy-ribeiro-identifica-300-templos-religiosos-em-marica/
+              </p>
+            </ImageBanner>
+            <ImageBanner
+              title="CADASTRAMENTO DOS TERREIROS MATRIZ-AFRICANA E AFRO-INDÍGENA"
+              data="sala5/reportagem_3.jpg"
+            >
+              <p slot="text">
+                O formulário de cadastramento de Comunidades Tradicionais de
+                Terreiro (CTT) de Pernambuco está temporariamente suspenso pela
+                Secretaria Executiva de Promoção da Equidade Social. O
+                cadastramento irá retornar, em breve.
+                <br /> <br />Disponível em:
+                https://www.sdscjpvd.pe.gov.br/seses/formulario-de-cadastramento-das-organizacoes-religiosas/
+              </p>
+            </ImageBanner>
+            <ImageBanner
+              title="CTR - Cadastro de Templos Religiosos - Efetuar Adesão"
+              data="sala5/reportagem_4.jpg"
+            >
+              <p slot="text">
+                Efetuar adesão ao Cadastro de Templos Religiosos-CTR, o qual
+                visa facilitar o reconhecimento do direito à isenção, imunidade
+                ou não incidência tributária referente ao patrimônio, à renda e
+                aos serviços relacionados com as atividades essenciais dos
+                templos de qualquer culto.
+                <br /> <br />Disponível em:
+                https://mobile.receita.fazenda.df.gov.br/aplicacoes/CartaServicos/servico.cfm?codTipoPessoa=7&codServico=1127&codSubCategoria=132
+              </p>
+            </ImageBanner>
+            <ImageBanner
+              title="Prefeitura realiza Cadastro Único itinerante em comunidades de religiões de matrizes africanas"
+              data="sala5/reportagem_5.jpg"
+            >
+              <p slot="text">
+                Para fortalecer o processo de inclusão e garantia de direitos de
+                todos os cidadãos aracajuanos, a Prefeitura de Aracaju, por meio
+                da Assistência Social de Aracaju, iniciou uma série de mutirões
+                itinerantes de cadastramento de pessoas de religiões de matrizes
+                africanas.
+                <br /> <br />Disponível em:
+                https://www.aracaju.se.gov.br/noticias/84249/prefeitura_realiza_cadastro_unico_itinerante_em_comunidades_de_religioes_de_matrizes_africanas.html
+              </p>
+            </ImageBanner>
+
+            <ImageBanner
+              title="Os Intelectuais alagoanos e o Quebra de Xangô de 1912"
+              data={"sala5/intelec_thumb.png"}
+            >
+              <p slot="text">
+                Disponível em :<br />
+                https://www.repositorio.ufal.br/bitstream/riufal/3756/1/Os%20Intelectuais%20alagoanos%20e%20o%20Quebra%20de%20Xang%C3%B4%20de%201912:%20uma%20hist%C3%B3ria%20de%20sil%C3%AAncios%20(1930-1950).pdf
+              </p>
+            </ImageBanner>
           </div>
           <div class="h-80"></div>
         </div>
@@ -157,6 +362,10 @@
 </div>
 
 <style>
+  .teste {
+    grid-column: span 2; /* Spans two columns for the last two items */
+    text-align: center; /* Centers content horizontally */
+  }
   .viewport {
     position: relative;
     overflow: scroll;

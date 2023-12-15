@@ -8,6 +8,9 @@
 
   const section = content["sala2"];
   let element;
+
+  import { Sound } from "svelte-sound";
+
   onMount(() => {
     animateScroll.scrollTo({
       element: "#scrollable",

@@ -1,6 +1,6 @@
 export const content = {
   'sala2': {
-    title: "É bruxaria ou não é?",
+    title: "Bruxa, Herege ou Só mulher",
     title_shadow: 'shadow-purple-800',
     url: 'sala2',
     image: 'sala2/a_bruxa_albrecht_durer.png',
@@ -50,7 +50,7 @@ export const content = {
     acervoTint: 'bg-[#321223]',
     icons: ['image', 'video',],
        
-    text: [`Na Idade Média, a feiticeira era vista como uma mulher criminosa, perversa, ignorante e supersticiosa. Ligadas a crenças pagãs arraigadas, especialmente nas áreas rurais, essas mulheres, devido à sua condição social frágil e falta de conhecimento, eram mais propensas a se envolver em práticas supersticiosas e ilusões atribuídas ao Diabo. A crença em encontros noturnos liderados por uma divindade pagã persistiu por muito tempo, levando as mulheres que compartilhavam dessas crenças a serem rotuladas como loucas pelas autoridades religiosas da época.
+    text: [`Entre o século XVI e XIX, um generoso número de africanos passou a ser desembarcado na América portuguesa como mão de obra escravizada: homens, mulheres e crianças, advindos de diversas localidades africanas. Indivíduos de povos distintos, mas com alguns pontos de confluência - como serem riquíssimos em crenças e religiosidades. Deste modo, assim como sua música e seus jogos seriam criminalizados, suas práticas ritualísticas, que envolviam cantos, religião e bastante conhecimento medicinal para curas e alentos, passaram a ser concebidas como feitiçaria/bruxaria e criminalizadas. Este aspecto sobrevive até hoje: inúmeros são os casos de intolerância religiosa, evidenciando que, apesar das religiões de matrizes africanas não serem mais criminalizadas juridicamente, ainda são julgadas nos meios sociais.
     `
      ]
   },
@@ -61,9 +61,10 @@ export const content = {
 
     icons: ['image', 'text'],
 
-    text: [`“Nós, pois, desejando providenciar, com oportunos remédios, como ao nosso ofício incumbe, […] delegamos-te e constituímos-te, a ti […] Rei João [III], por seu Embaixador e de quem, por isso, muito fiamos como Comissário nosso e da Santa Sé, bem como Inquisidor […] para que, contra todos aqueles que, convertidos à fé cristã, voltaram ao rito judaico, bem como contra aqueles que nascidos de pais cristãos abraçaram o rito judaico, ou observam a heresia Luterana, ou outras […]"
-    
-    Trecho da bula de criação da inquisição portuguesa "Cum ad nichil magis" de papa Clemente VII.`],
+    text: [`O artigo 5º da Constituição Federal de 1988 alerta: é inviolável a liberdade de consciência e de crença, sendo assegurado o livre exercício dos cultos religiosos e garantida, na forma da lei, a proteção aos locais de culto e a suas liturgias.
+
+    Esta sala mostra como ainda hoje as religiões de matriz africana são rotuladas como bruxaria. Esperamos que a imersão histórica seja tão incômoda quanto a realidade.
+    `],
     image: 'sala5/defeito_de_cor_1.jpg',
     tint: 'bg-[#6e81e2]'
   },

@@ -8,7 +8,9 @@
 
   const section = content["sala3"];
   let element;
+  let celebration;
   onMount(() => {
+    celebration.play();
     animateScroll.scrollTo({
       element: "#scrollable",
       duration: 2000,
@@ -19,6 +21,14 @@
 
 <div in:fade={{ duration: 1000 }} class={section.acervoTint}>
   <Section {section} />
+  <audio
+    src="./images/sala2/whispers.m4a"
+    preload="auto"
+    loop
+    bind:this={celebration}
+  >
+    <track kind="captions" />
+  </audio>
   <div id="scrollable" class="{section.acervoTint} h-full">
     <div class="text-white bg-[#100c3d]">
       <div class="px-5 flex flex-col items-center h-screen-80">

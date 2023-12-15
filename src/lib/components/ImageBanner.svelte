@@ -16,6 +16,8 @@
   const isArr = Array.isArray(data);
 
   const isImg = (str) => str.includes(".png") || str.includes(".jpg");
+  const isVideo = (str) => str.includes(".mp4");
+  const isYt = (str) => str.includes("youtube");
   let viewport;
   let contents;
 </script>
@@ -43,7 +45,7 @@
                   <VideoPlayer
                     timeDisplay="true"
                     poster="./images/{thumbnail}"
-                    source="./images/{image}"
+                    source="./images/{data}"
                     loop
                   />
                 {/if}
@@ -56,13 +58,22 @@
             class="transition ease-in delay-150 max-h-5-6 object-contain"
             src="./images/{data}"
           />
-        {:else}
+        {:else if isVideo(data)}
           <VideoPlayer
             timeDisplay="true"
             poster="./images/{thumbnail}"
             source="./images/{data}"
             loop
           />
+        {:else if isYt(data)}
+          <iframe
+            height="380px"
+            src={data}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         {/if}
 
         <div class="h-2/6 overflow-hidden scroll-container">

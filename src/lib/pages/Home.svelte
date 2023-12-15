@@ -6,8 +6,47 @@
   import { content } from "../utils/content";
   import * as animateScroll from "svelte-scrollto";
   const sections = Object.values(content);
+  let introducao;
 
+  function on_key_down(event) {
+    // `keydown` event is fired while the physical key is held down.
+
+    // Assuming you only want to handle the first press, we early
+    // return to skip.
+    if (event.repeat) return;
+
+    // In the switch-case we're updating our boolean flags whenever the
+    // desired bound keys are pressed.
+    switch (event.code) {
+      case "Space":
+        // is_ctrl_down = true;
+
+        event.preventDefault();
+        break;
+
+      case "h":
+        event.preventDefault();
+        break;
+    }
+  }
+
+  function on_key_up(event) {
+    switch (event.code) {
+      case "Space":
+        introducao.play();
+
+        event.preventDefault();
+        break;
+
+      case "h":
+        is_h_down = false;
+
+        event.preventDefault();
+        break;
+    }
+  }
   onMount(() => {
+    // introducao.play();
     AOS.init();
   });
 </script>
@@ -15,12 +54,13 @@
 <svelte:head>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
+<svelte:window on:keydown={on_key_down} on:keyup={on_key_up} />
 
 <div class="h-screen w-full bg-black">
   <div class="text-white bg-black">
     <div class="bg-[#310b2a] pt-28 pb-8 px-5 h-screen-95 justify-center flex">
       <div class="w-2/3 flex flex-col justify-between items-center">
-        <div>
+        <div class="flex flex-col justify-center items-center">
           <h2
             class="transition delay-50 text-[#d05d50]
             md:text-4xl lg:text-4xl tracking-wide font-mont font-bold leading-tight"
@@ -30,13 +70,13 @@
 
           <h3
             class="transition delay-50 text-[#c34739] opacity-80
-            md:text-xl text-3xl tracking-wide font-mont py-1"
+            md:text-xl text-3xl tracking-wide font-mont py-1 text-left w-full"
           >
             Exposição Virtual | UFF
           </h3>
           <h3
             class="transition delay-50 opacity-60
-            md:text-md text-sm tracking-wide font-mont py-1"
+            md:text-md text-sm tracking-wide font-mont py-1 w-full"
           >
             Curadouras: Ariel de Oliveira, Karen da Silva, Mairá Gomes, Mariana
             Chaves, Millena Delfino e Nathália Rouxinol
@@ -49,6 +89,16 @@
             e/ou ainda são associadas a práticas como feitiçaria/bruxaria, mesmo
             quando sequer eram.
           </p>
+
+          <audio
+            class="mt-8 justify-end opacity-50 hover:scale-110 transition"
+            src="./images/introducaco.mp3"
+            controls
+            preload="auto"
+            bind:this={introducao}
+          >
+            <track kind="captions" />
+          </audio>
         </div>
         <div class="h-20"></div>
         <i class="w-12">

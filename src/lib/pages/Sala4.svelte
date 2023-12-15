@@ -22,7 +22,7 @@
   <div id="scrollable" class="bg-[#0e0308] h-full">
     <div class="text-white">
       <div
-        class="px-5 h-screen-80 flex flex-col items-center bg-[#442b29] {section.acervoTint}"
+        class="px-5 h-screen-80 flex flex-col items-center bg-[#4a261e] {section.acervoTint}"
       >
         <h2
           class="transition delay-50
@@ -40,6 +40,18 @@
           </h2>
 
           <div class="w-full grid grid-cols-3 gap-4">
+            <ImageBanner
+              title="Cortejo da Rainha Negra na Festa de Reis"
+              data="sala5/cortejo_rainha_negra.jpg"
+            >
+              <p slot="text">
+                Cortejo da Rainha Negra na Festa de Reis, de Carlos Julião.
+                Fonte: Acervo iconográfico Biblioteca Nacional Entre as
+                ilustrações de Carlos Julião (1740-1811), destaque para a
+                representação da cerimônia da rainha já coroada, com
+                instrumentos de matriz africana.
+              </p>
+            </ImageBanner>
             <ImageBanner title="Calundu" data="sala2/calundu.png">
               <p slot="text">
                 A maioria dos processos envolvendo feitiçaria tratava de
