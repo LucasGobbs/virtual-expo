@@ -9,11 +9,11 @@
   const section = content["sala5"];
   let element;
   onMount(() => {
-    // animateScroll.scrollTo({
-    //   element: "#scrollable",
-    //   duration: 2000,
-    //   delay: 400,
-    // });
+    animateScroll.scrollTo({
+      element: "#scrollable",
+      duration: 2000,
+      delay: 400,
+    });
   });
 </script>
 
